@@ -1,0 +1,127 @@
+body {
+  background-color: #222430;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div#project_single {
+  display: flex;
+  flex-direction: row;
+}
+
+div#project_single h1,
+div#project_single h2,
+div#project_single h3,
+div#project_single h4,
+div#project_single h5,
+div#project_single h6 {
+  color: var(--color-primary) !important;
+  letter-spacing: 1.1px;
+}
+#project_single > div.project_thumbnail {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 756px);
+  height: calc(100vh - 72px);
+}
+#project_single > div.project_thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+div#project_single .project_article {
+  width: 756px;
+  padding: 60px 70px 120px 70px;
+  box-sizing: border-box;
+  margin-left: auto;
+}
+.project_contents {
+  color: #fff;
+}
+.project_inner_top {
+  margin-bottom: 20px;
+}
+.project_inner_top h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.project_inner_top p {
+  color: #ddd;
+  margin: 0 !important;
+}
+
+.project_contents blockquote {
+  padding: 5px 10px;
+  border-left: 5px solid var(--color-primary);
+  margin: 20px 0px;
+}
+.project_contents blockquote p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+div#comments {
+  margin-top: 100px;
+}
+#comments > .post-comments__title {
+  font-size: 18px;
+  border-bottom: 2px solid;
+  padding-bottom: 5px;
+  margin-bottom: 24px;
+}
+#comments > ol > li > div > p {
+  color: #ddd;
+}
+#comments > ol > li > div > div > a {
+  color: #bf9396;
+}
+#respond > h4.post-comments-form__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid;
+}
+#commentform > p.logged-in-as > span {
+  color: #8491c5;
+}
+textarea#comment {
+  color: #fff;
+}
+#project_single > article > div.project_inner_top > div.createdBy {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+#project_single > article > div.project_inner_top > div.createdBy img {
+  width: 30px;
+  border-radius: 50%;
+  height: 30px;
+  border: 2px solid var(--color-primary);
+}
+#project_single > article > div.project_inner_top > span {
+  color: #ddd;
+  font-style: italic;
+}
+.sp-footer-sponsors .sp-sponsors {
+  padding: 0 !important;
+}
+@media screen and (max-width: 990px) {
+  div#project_single {
+    flex-direction: column;
+  }
+  #project_single > div.project_thumbnail {
+    position: unset;
+    width: 100%;
+    height: auto;
+  }
+  div#project_single .project_article {
+    width: 100%;
+  }
+}

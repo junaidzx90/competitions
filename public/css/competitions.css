@@ -1,0 +1,595 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+body {
+  background-color: #222430;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#competitions{
+  display: none;
+}
+main#wrapper {
+  overflow: unset;
+}
+div#submit_projects {
+  padding: 70px 0px 100px;
+}
+.comp_page_title {
+  color: var(--color-primary);
+}
+.submitprojectbtn a {
+  padding: 8px;
+  background: #151720;
+  border-radius: 3px;
+}
+img[src=''] {
+  display: none;
+}
+span.comp-eorror-alerts {
+  color: #ffd9d9;
+  background: #ff000040;
+  padding: 5px 10px;
+  border-left: 5px solid red;
+}
+span.comp-success-alerts {
+  color: #ffd9d9;
+  background: #00ffe140;
+  padding: 5px 10px;
+  border-left: 5px solid rgb(0, 255, 247);
+}
+form#project-upload-form {
+  width: 100%;
+}
+.comp_form_elements {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 10px;
+  width: 50%;
+}
+.comp_input {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  color: #ffffff;
+  position: relative;
+}
+.comp_input.name_of_the_project,
+.comp_input.short_description,
+.comp_input.project_image,
+.comp_input.project_url,
+.comp_input.project_type,
+.comp_input.application,
+.comp_input.your_age {
+  width: 100%;
+}
+.comp_input_box {
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+}
+.comp_input.comp_input_box .comp_input {
+  flex: 0.5;
+}
+form#project-upload-form input[type='text'],
+form#project-upload-form input[type='url'],
+form#project-upload-form select,
+form#project-upload-form textarea {
+  color: #fff;
+  background-color: #33384e82;
+}
+#submit_project {
+  background-color: var(--color-primary);
+  color: #15151d;
+  text-transform: uppercase;
+}
+#submit_project:hover {
+  transition: 0.3s;
+  background-color: transparent;
+  color: var(--color-primary);
+}
+.comp_input input,
+.comp_input select,
+#loginform input {
+  border: 1px solid var(--color-info);
+  border-radius: 3px;
+  outline: none;
+  height: 36px;
+  padding: 5px 8px;
+}
+#st_applications {
+  height: fit-content !important;
+}
+.comp_input textarea {
+  padding: 5px 8px;
+  border: 1px solid var(--color-info);
+  border-radius: 3px;
+  outline: none;
+  color: #ffffff;
+}
+
+.comp_input input:focus,
+.comp_input select:focus,
+.comp_input textarea:focus,
+#loginform input:focus {
+  border-color: var(--color-primary);
+}
+
+.comp_input.project_image {
+  margin-top: 30px;
+}
+.comp_input.project_image label {
+  color: var(--color-primary) !important;
+  padding: 5px 20px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  width: fit-content;
+}
+input#project_url:invalid {
+  background: rgb(255 0 0 / 7%) !important;
+  border-color: red !important;
+}
+.comp_input.project_image label input[type='file'] {
+  display: none;
+}
+.preview_image {
+  max-width: 100%;
+}
+.preview_image img {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+input.comp_btn {
+  border: 1px solid var(--color-primary);
+  padding: 8px 30px;
+  outline: 0;
+  box-shadow: none;
+  background: var(--color-primary);
+  border-radius: 3px;
+  color: var(--color-secondary);
+  font-size: 14px;
+  margin: 22px 0px;
+  cursor: pointer;
+}
+.jBox-Mouse .jBox-container,
+.jBox-Tooltip .jBox-container {
+  background: transparent !important;
+  box-shadow: unset !important;
+}
+.jBox-content {
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  box-shadow: 0 0 30px rgb(0 0 0 / 15%) !important;
+}
+._tooltip .jBox-container .jBox-content {
+  background: #3a3a3a !important;
+  color: #b5b5b5;
+  padding: 5px 10px !important;
+}
+._tooltip .jBox-pointer:after {
+  background: #3a3a3a !important;
+}
+
+@media screen and (max-width: 880px) {
+  .comp_form_elements {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .comp_form_elements {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .comp_form_elements {
+    width: 100%;
+  }
+}
+
+/* Single page */
+.comp_inner_top {
+  margin-bottom: 20px;
+}
+.comp_inner_top h3 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.comp_inner_top p {
+  color: #ddd;
+  margin: 0 !important;
+}
+
+.competition_thumbnail {
+  width: 100%;
+  height: 345px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+#competition_single > article > div.list_of_requirements {
+  display: flex;
+  justify-content: center;
+}
+#competition_single > article > div.list_of_requirements > dl {
+  display: flex;
+  gap: 10px;
+}
+#competition_single > article > div.list_of_requirements > dl > dt {
+  color: #c0c0c0;
+}
+#competition_single > article > div.list_of_requirements > dl > dd {
+  color: var(--primary);
+}
+
+div#competition_single h1,
+div#competition_single h2,
+div#competition_single h3,
+div#competition_single h4,
+div#competition_single h5,
+div#competition_single h6,
+.competition_results h1,
+.competition_results h3 {
+  color: var(--color-primary) !important;
+  letter-spacing: 1.1px;
+}
+article.competition_article,
+.competition_results {
+  padding: 50px 70px 170px;
+}
+.comp_contents p {
+  color: #c8c8c8;
+}
+p.compActiveDate {
+  color: #7b8d5f;
+}
+.comp_contents blockquote {
+  padding: 5px 10px;
+  border-left: 5px solid var(--color-primary);
+  margin: 20px 0px;
+}
+.comp_contents blockquote p {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 10px;
+  color: #ffffff;
+}
+.comp_contents blockquote::before {
+  margin-left: 10px;
+}
+.submitcompbtn {
+  margin-top: 30px;
+}
+.submitcompbtn a {
+  padding: 8px;
+  background: var(--color-primary);
+  border-radius: 3px;
+  color: #15151d;
+}
+.submitcompbtn a:hover {
+  transition: 0.3s;
+  background-color: transparent;
+  color: var(--color-primary);
+}
+#competition_single > div > div > div {
+  margin: auto;
+  backdrop-filter: opacity(1);
+  min-width: 300px;
+}
+#competition_single > div > div > div dl {
+  color: #a5a5a5;
+  margin: 0;
+  border: 1px solid var(--color-primary) !important;
+  padding: 10px;
+  text-align: center;
+}
+#competition_single > div > div > div dl dd:last-child {
+  margin-bottom: 0;
+}
+.notallowed_user,
+.submitprojectbtn {
+  margin: 20px 0;
+}
+.warning__msg {
+  padding: 5px 10px;
+  border-left: 5px solid #ff0022;
+  background-color: #ff000045;
+}
+.warning__msg p {
+  margin: 0;
+  color: #ffffff;
+}
+.warning__msg span {
+  color: #878787;
+}
+
+/* Competitons */
+
+div#competitions {
+  padding: 70px 70px;
+}
+div#competitions.isDisabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+div#competitions h2,
+div#competitions h3,
+div#competitions h4,
+div#competitions h5,
+div#competitions h6 {
+  color: var(--color-primary) !important;
+  letter-spacing: 1.1px;
+}
+img[src=""] {
+	display: none !important;
+}
+#competition_results {
+  margin-top: 50px;
+}
+#competition_results > div.competition_cards {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+#competition_results > div > div.comp_warning {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #fcdede;
+  border-left: 5px solid red;
+}
+#competition_results > div.loadmoreWrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#competition_results > div.loadmoreWrap > button.comp_loadmore {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 10px 18px;
+  line-height: 18px;
+  font-size: 18px;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+#competition_results > div.loadmoreWrap > button.isDisabled {
+  pointer-events: none;
+  border-color: #373b51;
+  color: #7a82b7;
+}
+#competition_results > div.loadmoreWrap > button.comp_loadmore:hover {
+  transition: 0.5s;
+  border-color: #2d3041;
+}
+#competition_results > div > div.comp_card {
+  width: 100%;
+  background: #1a1d26;
+  height: fit-content;
+}
+
+#competition_results > div > div > div.card_contents > div.enter_competion_btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  z-index: 999;
+}
+
+#competition_results
+  > div
+  > div
+  > div.card_contents
+  > div.enter_competion_btn
+  > a {
+  padding: 5px 15px;
+  background-color: #a3ff12;
+  color: #000;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 600;
+}
+#competition_results > div > div > div.card_head > h3 {
+  font-size: 18px;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 75%;
+}
+#competition_results > div > div > div.card_head > h3 > a {
+  line-height: 18px;
+  text-transform: none;
+}
+#competition_results > div > div > div.card_head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  background-color: #363b50;
+}
+#competition_results > div > div > div.card_head > span {
+  color: #ddd;
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  font-size: 12px;
+}
+#competition_results > div > div > div.card_contents {
+  padding: 20px;
+  color: #fff;
+  position: relative;
+}
+#competition_results
+  > div
+  > div
+  > div.card_contents:hover
+  div.enter_competion_btn {
+  visibility: visible;
+  transition: 0.5s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -moz-transition: 0.5s ease-in;
+  -ms-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+}
+#competition_results {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+#competition_results
+  > div
+  > div
+  > div.card_contents
+  > div.competition_status
+  > div {
+  padding: 0px 0px 20px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+}
+#competition_results > div > div > div.card_contents > table {
+  margin: 0;
+  border: none;
+  backdrop-filter: sepia(1);
+  background-color: #212433;
+}
+#competition_results > div > div > div.card_contents > table tr th,
+#competition_results > div > div > div.card_contents > table tr td {
+  padding: 5px;
+  border: 1px solid #373b51;
+  color: #fff;
+}
+#competition_results
+  > div
+  > div
+  > div.card_contents
+  > table
+  > tbody
+  > tr
+  > th
+  > i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ffffff3b;
+  min-width: 20px;
+}
+.sp-footer-sponsors .sp-sponsors {
+  padding: 0 !important;
+}
+@media screen and (max-width: 980px) {
+  #competitions > div.competition_head > div.competiton_filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  div#competitions {
+    padding: 30px 30px;
+  }
+  #competition_results > div.competition_cards {
+    grid-template-columns: 48% 48%;
+  }
+  #competition_results
+    > div
+    > div
+    > div.card_contents
+    > div.enter_competion_btn {
+    position: initial;
+    visibility: visible;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div#competitions {
+    padding: 30px 30px;
+  }
+  div#competitions h1,
+  div#competitions h2,
+  div#competitions h3,
+  div#competitions h4,
+  div#competitions h5,
+  div#competitions h6 {
+    font-size: 2rem;
+  }
+  #competition_results > div.competition_cards {
+    grid-template-columns: 100%;
+  }
+  #competition_results > div > div > div.card_head > h3 > a {
+    font-size: 16px;
+  }
+  #competitions
+    > div.competition_head
+    > div.competiton_filters
+    > div.date_filters
+    > ul
+    > li
+    > span,
+  #submitted__projects
+    > div.filters
+    > div.competiton_filters
+    > div.date_filters
+    > ul
+    > li
+    > span {
+    font-size: 10px;
+  }
+  #competitions
+    > div.competition_head
+    > div.competiton_filters
+    > div.date_filters
+    > ul
+    > li
+    > strong,
+  #submitted__projects
+    > div.filters
+    > div.competiton_filters
+    > div.date_filters
+    > ul
+    > li
+    > strong {
+    font-size: 12px;
+  }
+  #competitions
+    > div.competition_head
+    > div.competiton_filters
+    > div.filters_by_cats
+    > div
+    > select,
+  #submitted__projects
+    > div.filters
+    > div.competiton_filters
+    > div.filters_by_cats
+    > div
+    > select {
+    font-size: 12px;
+  }
+  #competition_results > div.loadmoreWrap > button.comp_loadmore {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
+/* Competitons */

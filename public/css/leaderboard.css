@@ -1,0 +1,121 @@
+table.leaderboard_table {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+table.leaderboard_table tr th {
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+table.leaderboard_table tr td {
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: calc(100% / 6);
+    text-align: center;
+}
+table.leaderboard_table tr .mblhead{
+    display: none;
+}
+.leftalign {
+    text-align: left !important;
+    width: calc(100% / 5) !important;
+}
+table.leaderboard_table tbody tr{
+    background-color: #11141b;
+}
+table.leaderboard_table tbody tr:nth-child(even) {
+    background-color: #191e29;
+}
+.competitior_name {
+    display: flex;
+    gap: 17px;
+    align-items: center;
+}
+.competitor_avatar {
+    width: 30px;
+    height: 30px;
+    transform: rotate(45deg);
+    border: 2px solid var(--primary);
+    display: flex;
+}
+.competitor_avatar img {
+    transform: rotate(-45deg) scale(1.2);
+}
+
+.leaderboard_filter {
+    margin-top: 50px;
+}
+
+.tabs_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 230px;
+    height: 50px;
+}
+.tabs_container a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    display: flex;
+    background-color: #454a66;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: linear 0.3s;
+    color: #ffffff;
+    cursor: pointer;
+}
+.tabs_container a.active{
+    background-color: var(--primary);
+    color: #222534;
+    transition: 0.3s;
+    cursor: default;
+}
+
+@media screen and (max-width: 768px) {
+    .comp_inner_top h3 {
+        font-size: 20px;
+    }
+    .competition_results {
+        padding: 30px 30px 100px !important;
+    }
+    tbody#leaderboardBody {
+        display: flex;
+        flex-direction: column;
+    }
+    table.leaderboard_table thead {
+        display: none;
+    }
+    table.leaderboard_table tr .mblhead{
+        display: block;
+        min-width: 50%;
+    }
+    table.leaderboard_table tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    table.leaderboard_table tbody tr td {
+        padding: 10px;
+        text-align: left;
+        border-bottom: 1px solid #343851;
+    }
+    table.leaderboard_table tr td {
+        display: flex;
+        width: 100% !important;
+        flex-direction: row;
+        align-items: center;
+        gap: 22px;
+    }
+    table.leaderboard_table tr td p{
+        margin: 0;
+    }
+}

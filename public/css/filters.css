@@ -1,0 +1,103 @@
+
+#competitions > div.competition_head > div.title_area {
+    margin-bottom: 20px;
+}
+#competitions > div.competition_head > div.competiton_filters, #submitted__projects > div.filters > div.competiton_filters {
+    display: flex;
+    justify-content: space-between;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters, #submitted__projects > div.filters > div.competiton_filters > div.date_filters {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > span.leftArrow, #competitions > div.competition_head > div.competiton_filters > div.date_filters > span.rightArrow, 
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > span.leftArrow, #submitted__projects > div.filters > div.competiton_filters > div.date_filters > span.rightArrow {
+    color: #fff;
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > span.leftArrow:hover, #competitions > div.competition_head > div.competiton_filters > div.date_filters > span.rightArrow:hover,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > span.leftArrow:hover, #submitted__projects > div.filters > div.competiton_filters > div.date_filters > span.rightArrow:hover {
+    transform: scale(1.5);
+    transition: .5s ease-out;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li {
+    color: #fff;
+    display: none;
+    flex-direction: column;
+    user-select: none;
+    padding: 0px 10px;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li.fitem_visible,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li.fitem_visible {
+    display: flex;
+    text-align: center;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li.activeFilter,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li.activeFilter {
+    position: relative;
+    color: var(--color-primary);
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li.activeFilter:after,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li.activeFilter:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(
+    --color-primary);
+    clear: both;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li > span,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li > span {
+    color: #a1a1a1;
+    font-size: 12px;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li > strong,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li > strong {
+    font-size: 16px;
+}
+#competitions > div.competition_head > div.competiton_filters > div.date_filters > ul > li > strong:hover,
+#submitted__projects > div.filters > div.competiton_filters > div.date_filters > ul > li > strong:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+#competitions > div.competition_head > div.competiton_filters > div.filters_by_cats,
+#submitted__projects > div.filters > div.competiton_filters > div.filters_by_cats {
+    display: flex;
+    gap: 10px;
+}
+#competitions > div.competition_head > div.competiton_filters > div.filters_by_cats > div > select,
+#submitted__projects > div.filters > div.competiton_filters > div.filters_by_cats > div > select {
+    background-color: transparent;
+    color: #fff;
+    padding: 5px;
+}
+#competitions > div.competition_head > div.competiton_filters > div.filters_by_cats > div > select option,
+#submitted__projects > div.filters > div.competiton_filters > div.filters_by_cats > div > select option {
+    background-color: #1a1c28;
+}
+@media screen and (max-width: 480px) {
+    #competitions > div.competition_head > div.competiton_filters > div.filters_by_cats, #submitted__projects > div.filters > div.competiton_filters > div.filters_by_cats {
+        flex-direction: column;
+    }
+}

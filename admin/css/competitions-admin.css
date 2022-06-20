@@ -1,0 +1,78 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+ .avatars {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin-bottom: 20px;
+}
+.avatars .avatar {
+    width: 100px;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.avatars .avatar img{
+    width: 100%;
+}
+
+span.removeAvatar {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 26px;
+    color: red;
+    transform: rotate(45deg);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+.remarks_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 28px;
+}
+.remarks_list .remark {
+    padding: 3px 10px;
+    border-radius: 3px;
+    position: relative;
+    background: #e1e1e1;
+}
+.remarks_list .remark span.remarkremove {
+    position: absolute;
+    right: -12px;
+    top: -15px;
+    transform: rotate(45deg);
+    font-size: 22px;
+    padding: 3px;
+    color: red;
+    cursor: pointer;
+    user-select: none;
+}
+ @media screen and (max-width: 768px) {
+    #submitted_by > div.inside > table {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    thead, tbody{
+        min-width: 48%;
+    }
+    thead tr th{
+        border: none;
+    }
+    thead tr, tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+    }
+}

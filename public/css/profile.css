@@ -1,0 +1,540 @@
+body {
+  background-color: #222430;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+div#user_dashboard {
+  padding: 70px 70px 100px;
+  display: none;
+}
+div#user_dashboard.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+div#user_dashboard h1,
+div#user_dashboard h2,
+div#user_dashboard h3,
+div#user_dashboard h4,
+div#user_dashboard h5,
+div#user_dashboard h6 {
+  color: var(--color-primary) !important;
+  letter-spacing: 1.1px;
+}
+#user_dashboard > div > h1.__profile_type {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+#user_dashboard > div > h1.__profile_type strong {
+  text-transform: uppercase;
+}
+#user_dashboard > div > div.__profile__top {
+  display: flex;
+  gap: 2%;
+}
+#user_dashboard > div > div.__profile__top > div.profile__card {
+  width: 35%;
+  background: #373c52;
+  padding: 20px;
+  border-radius: 10px 0px 0px 10px;
+  border-right: 5px solid var(--color-primary);
+  height: fit-content;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top {
+  display: flex;
+}
+#user_dashboard > div > div.__profile__top > div.profile__info {
+  width: 73%;
+  background: #2b2e41;
+  padding: 20px;
+  border-radius: 0px 10px 10px 0px;
+  border-left: 5px solid var(--color-primary);
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.__avatar {
+  min-width: 100px;
+  max-width: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--color-primary);
+  margin-right: 5px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.user__info {
+  padding-left: 10px;
+  width: 70%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.user__info
+  > div
+  > p {
+  margin: 0;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.user__info
+  > div.__user__name
+  > h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.user__info
+  > div.__school_name {
+  color: #ddd;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__card_top
+  > div.user__info
+  > div.__avg_points {
+  color: orange;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__description {
+  margin-top: 20px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__description
+  label {
+  border-bottom: 1px solid;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__description
+  label,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__description
+  p {
+  color: #ffffff;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__card
+  > div.__description
+  p {
+  margin: 0;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.profile__info_top {
+  display: flex;
+  justify-content: space-between;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.profile__info_top
+  > button {
+  height: fit-content;
+  border: none;
+  background: transparent;
+  color: var(--color-primary);
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.info__view
+  > dl {
+  margin: 0;
+  color: #fff;
+  background: #2f3245;
+  padding: 20px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.info__view
+  > dl
+  > dd:last-child {
+  margin: 0;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.info__view
+  > dl
+  > dt
+  > i {
+  display: inline-block;
+  width: 20px;
+  margin-right: 5px;
+  color: #ffffff3b;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div.info__view
+  > dl
+  > dd {
+  padding-left: 29px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  label {
+  color: var(--color-primary);
+  margin: 0;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > div.__avatar_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > div.__avatar_box
+  > div.avatar_image {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #676946;
+  border-radius: 5px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > div.__avatar_box
+  > div.avatar_image:hover {
+  border-color: var(--color-primary);
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > div.__avatar_box
+  > div.avatar_image.selected {
+  border-color: var(--color-primary);
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > div.__avatar_box
+  > div.avatar_image:hover
+  img {
+  transition: 0.3s;
+  opacity: 0.6;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > select,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > input {
+  min-height: 40px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > select,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > input,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > textarea {
+  padding: 5px 10px;
+  background-color: #00000042;
+  color: #ffffff;
+  border: 1px solid #dddddd52;
+  outline: none;
+  border-radius: 3px;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > select
+  > option {
+  background-color: #000000ab;
+}
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > select:focus,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > input:focus,
+#user_dashboard
+  > div
+  > div.__profile__top
+  > div.profile__info
+  > div
+  > div.comp__p_inp
+  > textarea:focus {
+  border-color: var(--color-primary);
+}
+
+#submitted__projects > div.project_cards {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#submitted__projects > div > div.project_card {
+  background-color: #2b2e41;
+  border-radius: 5px;
+  overflow: hidden;
+  height: fit-content;
+}
+#submitted__projects > div.project_cards > div > div.pro__thumbnail {
+  position: relative;
+  max-height: 200px;
+  overflow: hidden;
+}
+#submitted__projects > div.project_cards > div > div.pro__thumbnail img {
+  width: 100%;
+}
+#submitted__projects > div.project_cards > div > div.pro__thumbnail > div {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  background-color: #34394f;
+  border-radius: 3px;
+  color: red;
+  text-align: center;
+  padding: 5px 10px;
+}
+#submitted__projects > div.project_cards > div > div.pro__thumbnail > div > i {
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+}
+#submitted__projects
+  > div.project_cards
+  > div
+  > div.pro__thumbnail
+  > div:hover
+  i {
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+#submitted__projects > div > div > div.card_bottom {
+  padding: 15px;
+}
+#submitted__projects > div > div > div.card_bottom > h3 {
+  font-size: 22px;
+  text-transform: inherit;
+  margin-bottom: 0;
+}
+#submitted__projects > div > div > div.card_bottom > span {
+  color: #ddd;
+  font-size: 14px;
+}
+#submitted__projects > div > div > div.card_bottom > div {
+  background: #2f3245;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+}
+#submitted__projects > div > div > div.card_bottom > div > h4 {
+  margin: 0;
+  border-bottom: 1px solid;
+  margin-bottom: 5px;
+  padding-bottom: 3px;
+}
+#submitted__projects > div.loadmoreWrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+#submitted__projects > div.loadmoreWrap > button.comp_loadmore {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: 10px 18px;
+  line-height: 18px;
+  font-size: 18px;
+  border-radius: 3px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+}
+#submitted__projects > div.loadmoreWrap > button.isDisabled {
+  pointer-events: none;
+  border-color: #373b51;
+  color: #7a82b7;
+}
+#submitted__projects > div.loadmoreWrap > button.comp_loadmore:hover {
+  transition: 0.5s;
+  border-color: #2d3041;
+}
+div.comp_warning {
+  padding: 5px 10px;
+  border-radius: 3px;
+  background-color: #fcdede;
+  border-left: 5px solid red;
+}
+.sp-footer-sponsors .sp-sponsors {
+  padding: 0 !important;
+}
+@media screen and (max-width: 980px) {
+  #submitted__projects > div.filters > div.competiton_filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #user_dashboard > div > div.__profile__top {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #user_dashboard > div > div.__profile__top > div.profile__card,
+  #user_dashboard > div > div.__profile__top > div.profile__info {
+    width: 100%;
+    border-bottom: 5px solid var(--color-primary);
+    border-radius: 10px;
+  }
+  #submitted__projects > div.project_cards {
+    grid-template-columns: 48% 48%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  div#user_dashboard {
+    padding: 40px 30px;
+  }
+  #user_dashboard > div > h1.__profile_type {
+    font-size: 18px;
+  }
+  #user_dashboard
+    > div
+    > div.__profile__top
+    > div.profile__info
+    > div.profile__info_top
+    > h4 {
+    font-size: 16px;
+  }
+  #submitted__projects > div.project_cards {
+    grid-template-columns: 100%;
+  }
+  #submitted__projects > div.loadmoreWrap > button.comp_loadmore {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}
