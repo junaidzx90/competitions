@@ -70,7 +70,7 @@ class Competitions {
 		if ( defined( 'COMPETITIONS_VERSION' ) ) {
 			$this->version = COMPETITIONS_VERSION;
 		} else {
-			$this->version = '1.0.2';
+			$this->version = '1.0.3';
 		}
 		$this->plugin_name = 'competitions';
 

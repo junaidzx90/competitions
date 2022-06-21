@@ -313,6 +313,18 @@ p.compActiveDate {
 .warning__msg span {
   color: #878787;
 }
+.success__msg {
+  padding: 5px 10px;
+  border-left: 5px solid #a3ff12;
+  background-color: #a3ff1229;
+}
+.success__msg p {
+  margin: 0;
+  color: #ffffff;
+}
+.success__msg span {
+  color: #878787;
+}
 
 /* Competitons */
 

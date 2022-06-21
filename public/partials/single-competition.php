@@ -227,9 +227,9 @@ if(isset($_GET['type']) && $_GET['type'] === 'results'){
                         }else{
                             ?>
                             <div class="notallowed_user">
-                                <div class="warning__msg">
-                                    <p>You are not eligible to submit a project on this competition.</p>
-                                    <span>You reached the maximum project submission.</small>
+                                <div class="success__msg">
+                                    <p>Thank you for submitting your project.</p>
+                                    <span>Please check back for the competition result.</small>
                                 </div>
                             </div>
                             <?php

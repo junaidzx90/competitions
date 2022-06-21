@@ -2,7 +2,7 @@
 <?php
 $author_id = null;
 if(!is_user_logged_in(  ) && !isset($_GET['user'])){
-    wp_safe_redirect( home_url() );exit;
+    wp_safe_redirect( home_url('/login') );exit;
 }else{
     if(isset($_GET['user'])){
         $author_id = intval($_GET['user']);
