@@ -30,12 +30,12 @@ if(current_user_can( 'administrator' )){
 }
 ?>
 
-<div id="project_single">
+<div id="project_single" style="<?php echo ((the_post_thumbnail( 'large' ) === null)?'justify-content: center;':'') ?>">
     <div class="project_thumbnail">
         <?php echo the_post_thumbnail( 'large' ) ?>
     </div>
 
-    <article class="project_article">
+    <article class="project_article" style="<?php echo ((the_post_thumbnail( 'large' ) === null)?'margin-left: unset;':'') ?>">
         <div class="project_inner_top">
             <span class="publishdate"><i class="fa-solid fa-pen-to-square"></i> January 2,2022</span>
             <h3 class="competition__title"><?php echo the_title(  ) ?></h3>

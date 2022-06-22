@@ -619,7 +619,7 @@ class Competitions_Public {
 					$imageUrl = $this->upload_documents($_FILES['project_image']);
 				}
 
-				if($name_of_the_project !== null && $project_url !== null && $short_description !== null && $imageUrl !== null && $project_application !== null && $project_grade !== null){
+				if($name_of_the_project !== null && $project_url !== null && $short_description !== null && $project_application !== null && $project_grade !== null){
 					$args = array(
 						'post_title'    => wp_strip_all_tags( $name_of_the_project ),
 						'post_type'		=> 'project',

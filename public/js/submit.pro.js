@@ -64,40 +64,22 @@ jQuery(function ($) {
         $(this).val(value);
       }
 
-      if (element == 'project_image') {
-        //When empty file
-        if ($(this).val() !== '') {
-          $(this)
-            .parent('label')
-            .css({ background: '#33384e82', 'border-color': '#ddd' });
-        } else {
-          $(this)
-            .parent('label')
-            .css({ background: 'rgb(38 5 5 / 25%)', 'border-color': 'red' });
-        }
+      if ($(this).val() !== '') {
+        $(this).css({ background: '#33384e82', 'border-color': '#ddd' });
       } else {
-        if ($(this).val() !== '') {
-          $(this).css({ background: '#33384e82', 'border-color': '#ddd' });
-        } else {
-          $(this).css({
-            background: 'rgb(38 5 5 / 25%)',
-            'border-color': 'red',
-          });
-        }
+        $(this).css({
+          background: 'rgb(38 5 5 / 25%)',
+          'border-color': 'red',
+        });
       }
     });
   });
 
   $('#submit_project').on('click', function (e) {
     items.forEach((element) => {
-      if ($('#' + element + '').val() === '') {
-        e.preventDefault();
-        if (element == 'project_image') {
-          //When empty file
-          $('#' + element + '')
-            .parent('label')
-            .css({ background: 'rgb(38 5 5 / 25%)', 'border-color': 'red' });
-        } else {
+      if (element !== 'project_image') {
+        if ($('#' + element + '').val() === '') {
+          e.preventDefault();
           $('#' + element + '').css({
             background: 'rgb(38 5 5 / 25%)',
             'border-color': 'red',

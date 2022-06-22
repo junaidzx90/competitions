@@ -16,7 +16,7 @@
  * Plugin Name:       Competitions
  * Plugin URI:        https://www.upwork.com
  * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Junayed
  * Author URI:        https://www.upwork.com/freelancers/~013cb8700c27145b4e
  * License:           GPL-2.0+
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-define("COMPETITIONS_VERSION", "1.0.3");
+define("COMPETITIONS_VERSION", "1.0.4");
 $comp_alerts = null;
 /**
  * The code that runs during plugin activation.
