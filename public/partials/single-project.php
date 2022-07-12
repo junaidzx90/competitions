@@ -40,7 +40,7 @@ if(current_user_can( 'administrator' )){
             <span class="publishdate"><i class="fa-solid fa-pen-to-square"></i> January 2,2022</span>
             <h3 class="competition__title"><?php echo the_title(  ) ?></h3>
             <div class="createdBy">
-                <img width="50px" src="<?php echo $avatar_url ?>" alt="username">
+                <img width="50px" src="<?php echo $avatar_url ?>">
                 <a target="_blank" href="<?php echo ((get_option('comp_profile_page')) ? get_the_permalink( get_option('comp_profile_page') ).'?user='.$author : '#') ?>"><?php echo $authorname ?> <i class="fa-solid fa-link"></i></a>
             </div>
         </div>

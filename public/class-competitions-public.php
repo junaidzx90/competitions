@@ -334,9 +334,18 @@ class Competitions_Public {
 			}
 		}
 
+		$dates = array_values($dates);
+
+		function date_compare($a, $b){
+			$t1 = strtotime($a['value']);
+			$t2 = strtotime($b['value']);
+			return $t1 - $t2;
+		}
+		usort($dates, 'date_compare');
+
 		echo json_encode(array(
 			"competitions" => $competitions, 
-			"dates" => array_values($dates), 
+			"dates" => $dates, 
 			'maxpages' => $competitionsObj->max_num_pages
 		));
 		die;

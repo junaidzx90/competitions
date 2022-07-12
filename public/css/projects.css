@@ -29,6 +29,7 @@ div#project_single h6 {
   left: 0;
   width: calc(100% - 756px);
   height: calc(100vh - 72px);
+  z-index: -1;
 }
 #project_single > div.project_thumbnail img {
   width: 100%;
